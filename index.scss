@@ -19,10 +19,40 @@ a {
   }
 }
 
+a.clean-link {
+  display: inline-block;
+  border: none;
+}
+
+h1, h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
 .container {
   padding: 0 1rem;
   max-width: 500px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.mr-1 {
+  margin-right: .5em
+}
+
 @import './styles/Navbar.scss';
 @import './styles/Footer.scss';
+@import './styles/Grid.scss';
+@import './styles/Card.scss';
+
+@import './styles/Skills.scss';
