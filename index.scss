@@ -1,0 +1,28 @@
+$content: #7c7c7c;
+$primary: #3f42f4;
+$secondary: #b220b0;
+$tertiary: #e21f53;
+
+body {
+  color: $content;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: $content;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+
+  &:hover {
+    border-bottom: 2px solid $secondary;
+  }
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 500px;
+}
+
+@import './styles/Navbar.scss';
+@import './styles/Footer.scss';
