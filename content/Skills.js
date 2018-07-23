@@ -72,10 +72,8 @@ export const SKILLS = [
         sourceUrl: 'https://github.com/perezperret/rxdl-js'
       }
     ]
-  }
-]
+  },
 
-export const OTHERS = [
   {
     slug: 'python',
     title: 'Python',

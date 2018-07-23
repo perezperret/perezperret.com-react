@@ -7,6 +7,22 @@ import Others from '../components/Skills/Others'
 
 import { SKILLS, OTHERS, INFO } from '../content/Skills'
 
+const SectionLink = ({ title, isActive, to }) => (
+  <Link to={to} className={`clean-link col ${isActive ? ' nav_link--active': ''}`}>
+    <div className="card">{title}</div>
+  </Link>
+)
+
+const SkillsMenu = ({ skills, match, isActive }) => (
+  <div className="grid">
+    <div className="row">
+      {skills.map(({ slug, title }) => (
+        <SectionLink key={slug} to={`${match.url}/${slug}`} isActive={isActive(slug)} title={title} />
+      ))}
+    </div>
+  </div>
+)
+
 const Skills = ({ match, location }) => {
   const isActive = sectionName => (
     sectionName === location.pathname.split('/')[2]
@@ -14,19 +30,16 @@ const Skills = ({ match, location }) => {
 
   return (
     <div>
-      <h2><Link to={match.url}>Skills</Link></h2>
-      <ul>
-        {SKILLS.map(({ slug, title }) => (
-          <li key={slug}><Link to={`${match.url}/${slug}`}>{title}{isActive(slug) ? '[active]' : ''}</Link></li>
-        ))}
-        <li><Link to={`${match.url}/others`}>Others{isActive('others') ? '[active]' : ''}</Link></li>
-      </ul>
+      <h2><Link to={match.url}>skills</Link></h2>
 
-      <Route path={match.url} exact={true} render={() => <Info info={INFO} />} />
-      {SKILLS.map(skill => (
-        <Route key={skill.slug} path={`${match.url}/${skill.slug}`} render={() => <Section {...skill} />} />
-      ))}
-      <Route path={`${match.url}/others`} render={() => <Others others={OTHERS} />} />
+      <div className="content">
+        <Route path={match.url} exact={true} render={() => <Info info={INFO} />} />
+        {SKILLS.map(skill => (
+          <Route key={skill.slug} path={`${match.url}/${skill.slug}`} render={() => <Section {...skill} />} />
+        ))}
+      </div>
+
+      <Route path={match.url} exact={true} render={() => <SkillsMenu skills={SKILLS} isActive={isActive} match={match} />} />
     </div>
   )
 }
