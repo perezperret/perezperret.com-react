@@ -17,7 +17,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar">
-        <h2><Link className="navbar_logo" to="/">perezperret.com</Link></h2>
+        <h1><Link className="navbar_logo" to="/">perezperret</Link></h1>
 
         <div className="navbar_toggler">
           <span className="navbar_toggler_button" onClick={this.handleToggleTray}>

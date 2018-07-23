@@ -10,6 +10,13 @@
 
   &_logo {
     color: $primary;
+    border: none;
+    font-weight: 700;
+    font-family: 'Ubuntu Mono', monospace;
+
+    &:hover {
+      border: none;
+    }
   }
 
   &_toggler {
