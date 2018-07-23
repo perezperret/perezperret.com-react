@@ -8,7 +8,7 @@ import Others from '../components/Skills/Others'
 import { SKILLS, OTHERS, INFO } from '../content/Skills'
 
 const SectionLink = ({ title, isActive, to }) => (
-  <Link to={to} className={`clean-link col ${isActive ? ' nav_link--active': ''}`}>
+  <Link to={to} className={`clean-link col col-6${isActive ? ' nav_link--active': ''}`}>
     <div className="card">{title}</div>
   </Link>
 )
@@ -30,7 +30,7 @@ const Skills = ({ match, location }) => {
 
   return (
     <div>
-      <h2><Link to={match.url}>skills</Link></h2>
+      <h1>skills</h1>
 
       <div className="content">
         <Route path={match.url} exact={true} render={() => <Info info={INFO} />} />

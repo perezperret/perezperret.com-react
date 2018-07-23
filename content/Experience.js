@@ -3,7 +3,7 @@ export const EXPERIENCE = [
     role: 'Web Developer',
     company: 'Freelance',
     location: 'Caracas, Venezuela',
-    duration: 'Jan. 2017 – Dec. 2017, Jul. 2018 - present',
+    duration: 'Jan. 2017 – Dec. 2017 + Jul. 2018 - present',
     description: [
       'Web Developer for a jobs marketplace for the fitness industry.',
       'Developed a Ruby on Rails + ReactJS + PostgreSQL web application, deployed to Heroku + S3 for uploads + CloudFront for static assets.',

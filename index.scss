@@ -3,10 +3,7 @@ $primary: #3f42f4;
 $secondary: #b220b0;
 $tertiary: #e21f53;
 
-$background: #f9f7f8;
-
 body {
-  // background-color: $background;
   color: $content;
   font-family: 'Muli', sans-serif;
   font-weight: 200;
@@ -27,9 +24,30 @@ a.clean-link {
   border: none;
 }
 
+h1, h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
 .container {
   padding: 0 1rem;
   max-width: 500px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.mr-1 {
+  margin-right: .5em
 }
 
 @import './styles/Navbar.scss';

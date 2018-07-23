@@ -12,11 +12,13 @@ export const SKILLS = [
       + 'bootstrap a non trivial web app.',
     projects: [
       {
-        title: 'MessRb (web based messenger)',
+        title: 'MessRb',
+        description: 'A web based messenger built using ActionCable',
         sourceUrl: 'https://github.com/perezperret/mess-rb'
       },
       {
-        title: 'ReactRailsExpenses (expense tracker)',
+        title: 'ReactRailsExpenses',
+        description: 'An expenses tracker built using Rails and React',
         sourceUrl: 'https://github.com/perezperret/react-rails-expenses'
       }
     ]
@@ -30,10 +32,12 @@ export const SKILLS = [
     projects: [
       {
         title: 'perezperret.com',
+        description: 'This website, built with react and deployed to netlify',
         sourceUrl: 'https://github.com/perezperret/perezperret.com'
       },
       {
-        title: 'ReactRailsExpenses (expense tracker)',
+        title: 'ReactRailsExpenses',
+        description: 'An expenses tracker built using Rails and React',
         sourceUrl: 'https://github.com/perezperret/react-rails-expenses'
       }
     ]
@@ -46,11 +50,13 @@ export const SKILLS = [
       + 'It is quite powerful and expresive, and very straight forward to spin up',
     projects: [
       {
-        title: 'some-ruby-lib',
-        sourceUrl: 'https://github.com/perezperret/some-ruby-lib'
+        title: 'algsbuild.rb',
+        description: 'A build utility to compare algorithm performance',
+        sourceUrl: 'https://github.com/perezperret/algsbuild.rb'
       },
       {
         title: 'RubyExercises',
+        description: 'Some exercises and puzzles solved using ruby',
         sourceUrl: 'https://github.com/perezperret/ruby-exercises'
       }
     ]
@@ -64,11 +70,13 @@ export const SKILLS = [
       + 'large configuration, but I\'m learning to get around that too',
     projects: [
       {
-        title: 'quick-url (A simple URL parser and builder)',
+        title: 'quick-url',
+        description: 'A simple, recursive URL parser and builder',
         sourceUrl: 'https://github.com/perezperret/quick-url'
       },
       {
-        title: 'rxdl-js (An experimental REST front-end layer)',
+        title: 'rxdl-js',
+        description: 'An experimental REST front-end data layer',
         sourceUrl: 'https://github.com/perezperret/rxdl-js'
       }
     ]
@@ -82,7 +90,9 @@ export const SKILLS = [
       + 'forward to diving back into it when I get started with Machine Learning',
     projects: [
       {
-        title: 'Project Euler solutions',
+        title: 'Project Euler',
+        description: 'My solutions to Project Euler problems solved using Python',
+        siteUrl: 'https://projecteuler.net/',
         sourceUrl: 'https://github.com/perezperret/euler'
       }
     ]
@@ -95,7 +105,8 @@ export const SKILLS = [
       + 'simplicity and for how close to the actual computer it makes you feel',
     projects: [
       {
-        title: 'C Exercises (from K&R)',
+        title: 'c_exercises',
+        description: 'My solutions to some of the problems on the classic K&R book',
         sourceUrl: 'https://github.com/perezperret/c_exercises'
       }
     ]
@@ -109,7 +120,8 @@ export const SKILLS = [
       + ' lean towards dynamic languages these days)',
     projects: [
       {
-        title: 'Java Exercises (from Sedgewick and Wayne\'s Algorithms)',
+        title: 'JavaExercises',
+        description: 'My solutions to some problems from Sedgewick and Wayne\'s Algorithms book',
         sourceUrl: 'https://github.com/perezperret/JavaExercises'
       }
     ]

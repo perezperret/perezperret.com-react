@@ -19,6 +19,9 @@ $gutter-width: 1rem;
       padding-bottom: $gutter-width;
 
       position: relative;
+    }
+
+    & > .col-6 {
       flex: 0 0 50%;
     }
   }
