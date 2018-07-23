@@ -1,7 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import App from './App';
+import './node_modules/normalize.css'
+import './index.scss'
+import App from './App'
 
-const mountNode = document.getElementById('app');
-ReactDOM.render(<App />, mountNode);
+const mountNode = document.getElementById('app')
+ReactDOM.render(<App />, mountNode)
