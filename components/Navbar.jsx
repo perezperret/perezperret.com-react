@@ -1,31 +1,43 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import NavbarTray from './Navbar/NavbarTray'
+import Menu from './Menu'
+
+const logo = require('../images/logo.png')
 
 class Navbar extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isTrayOpen: false }
+    this.state = { trayIsOpen: false }
+
     this.handleToggleTray = this.handleToggleTray.bind(this)
   }
 
   handleToggleTray() {
-    this.setState({ isTrayOpen: !this.state.isTrayOpen })
+    const trayIsOpen = !this.state.trayIsOpen
+    this.setState({ trayIsOpen })
   }
 
   render() {
     return (
-      <nav className="navbar">
-        <h1 className="navbar_logo"><Link className="clean-link" to="/">perezperret</Link></h1>
+      <nav className={`navbar${this.state.trayIsOpen ? ' navbar--open' : ''}`}>
+        <div className="navbar_nav">
+          <Link className="navbar_nav_logo" to="/">
+            <img src={logo} />
+          </Link>
 
-        <div className="navbar_toggler">
-          <span className="navbar_toggler_button" onClick={this.handleToggleTray}>
-            +
-          </span>
-
-          {this.state.isTrayOpen ? <NavbarTray onToggleTray={this.handleToggleTray} /> : null}
+          <div className="navbar_nav_toggler" onClick={this.handleToggleTray}>
+            <FontAwesomeIcon icon="plus" />
+          </div>
         </div>
+
+        {this.state.trayIsOpen
+          ? <div className="navbar_tray">
+              <Menu onToggleTray={this.handleToggleTray} />
+            </div>
+          : null
+        }
       </nav>
     )
   }

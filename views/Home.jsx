@@ -1,10 +1,17 @@
 import React from 'react'
 import { ABOUT } from '../content/Home'
 
+import Menu from '../components/Menu'
+
 const Home = () => (
   <div>
-    <h2>about me</h2>
-    <p>{ABOUT}</p>
+    <div className="container display">
+      <p>{ABOUT}</p>
+    </div>
+
+    <div className="container">
+      <Menu />
+    </div>
   </div>
 )
 

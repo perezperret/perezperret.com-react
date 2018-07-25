@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => (
   <footer className="footer">
-    built by <a href="https://github.com/perezperret">perezperret</a> using <a href="https://reactjs.org">react</a>
+    Built by <a className="external" href="https://github.com/perezperret">perezperret</a> using <a className="external" href="https://reactjs.org">react</a>
   </footer>
 )
 

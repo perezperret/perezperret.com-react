@@ -1,58 +1,33 @@
-$content: #7c7c7c;
-$primary: #3f42f4;
+$content: #9b9b9b;
+$background: #f7f7f7;
+
+$primary: #ca0083;
 $secondary: #b220b0;
-$tertiary: #e21f53;
 
 body {
   color: $content;
+  background-color: $background;
   font-family: 'Muli', sans-serif;
-  font-weight: 200;
-}
-
-a {
-  text-decoration: none;
-  color: $content;
-  border-bottom: 2px solid rgba(0, 0, 0, .1);
-
-  &:hover {
-    border-bottom: 2px solid $secondary;
-  }
-}
-
-a.clean-link {
-  display: inline-block;
-  border: none;
-}
-
-h1, h4 {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-p {
-  margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .container {
-  padding: 0 1rem;
-  max-width: 500px;
+  padding: 0 2rem;
 }
 
-.d-flex {
+.display {
+  font-size: 1.5rem;
   display: flex;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.mr-1 {
-  margin-right: .5em
+  background-color: white;
+  align-items: center;
+  min-height: 360px;
 }
 
 @import './styles/Navbar.scss';
 @import './styles/Footer.scss';
+@import './styles/Menu.scss';
 @import './styles/Grid.scss';
 @import './styles/Card.scss';
+@import './styles/Link.scss';
 
 @import './styles/Skills.scss';

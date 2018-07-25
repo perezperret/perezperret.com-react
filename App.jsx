@@ -9,9 +9,7 @@ const App = () => (
   <Router>
     <div>
       <Navbar />
-      <div className="container">
-        <Routes />
-      </div>
+      <Routes />
       <Footer />
     </div>
   </Router>
