@@ -9,9 +9,10 @@ export const SKILLS = [
   {
     slug: 'ruby-on-rails',
     title: 'Ruby on Rails',
-    description: 'My go to tool for most projects, I feel very comfortable using it and '
-      + 'despite not being flashy anymore, it feels like the most efficient way to '
-      + 'bootstrap a non trivial web app.',
+    description: [
+      'RoR is my go to tool for most projects.',
+      'I feel very comfortable using it and despite it not being flashy anymore, it still feels like the most efficient way to bootstrap a non trivial web app.'
+    ],
     projects: [
       {
         title: 'MessRb',
@@ -29,8 +30,10 @@ export const SKILLS = [
   {
     slug: 'react',
     title: 'React',
-    description: 'The gold standard for the front-end these days, I\'m getting handy at it,'
-      + 'although it still feels somewhat boilerplaty as compared to Rails.',
+    description: [
+      'React is the gold standard for the front-end these days and I\'m getting handy at it.',
+      'It still feels a bit immature and boilerplaty around the edges, but I think it\ll get much more productive with time.'
+    ],
     projects: [
       {
         title: 'perezperret.com',
@@ -48,8 +51,10 @@ export const SKILLS = [
   {
     slug: 'ruby',
     title: 'Ruby',
-    description: 'I enjoy using Ruby as a scripting language, beyond web development. '
-      + 'It is quite powerful and expresive, and very straight forward to spin up',
+    description: [
+      'I enjoy using Ruby as a scripting language, beyond web development.',
+      'It is quite powerful and expresive, and very straight forward to spin up, plus it\'s great for grasping OO concepts'
+    ],
     projects: [
       {
         title: 'algsbuild.rb',
@@ -67,9 +72,10 @@ export const SKILLS = [
   {
     slug: 'javascript',
     title: 'JavaScript',
-    description: 'JavaScript is inescapeable these days, and it has become '
-      + 'quite nice to use. My only quarrell with it has been boilerplate and'
-      + 'large configuration, but I\'m learning to get around that too',
+    description: [
+      'JavaScript is inescapeable these days, and it has become quite nice to use.',
+      'My only quarrell with it has been boilerplate and large configurations, but that is becoming less of an issue every day'
+    ],
     projects: [
       {
         title: 'quick-url',
@@ -87,9 +93,10 @@ export const SKILLS = [
   {
     slug: 'python',
     title: 'Python',
-    description: 'Python was the first language I used for Computer Science '
-      + 'and I still enjoy it lot. I don\'t get to use it much, but I look '
-      + 'forward to diving back into it when I get started with Machine Learning',
+    description: [
+      'Python was the first language I used for Computer Science and I still enjoy it a lot.',
+      'I don\'t get to use it much, but I look forward to diving back into it when I get started with Machine Learning and Data Science'
+    ],
     projects: [
       {
         title: 'Project Euler',
@@ -103,8 +110,10 @@ export const SKILLS = [
   {
     slug: 'c-lang',
     title: 'C',
-    description: 'C was also an early tool for me, and I still like it for its '
-      + 'simplicity and for how close to the actual computer it makes you feel',
+    description: [
+      'C was also an early tool for me, and I still like it for its simplicity and for how close to the actual computer it makes you feel',
+      'I\'m not sure if I\'ll get to use it much more, but I sure hope I find a good use case for it some day in a future project'
+    ],
     projects: [
       {
         title: 'c_exercises',
@@ -117,9 +126,10 @@ export const SKILLS = [
   {
     slug: 'java',
     title: 'Java',
-    description: 'I used Java a lot during school and grew very fond of it. '
-      + 'Everyone loves to hate it, but I still find it fun to use (although I '
-      + ' lean towards dynamic languages these days)',
+    description: [
+      'I used Java a lot during school and grew very fond of it.',
+      'Everyone loves to hate it, but I still find it fun to use (although I lean towards dynamic languages these days)'
+    ],
     projects: [
       {
         title: 'JavaExercises',

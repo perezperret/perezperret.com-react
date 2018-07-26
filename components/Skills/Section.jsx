@@ -4,15 +4,16 @@ import ProjectLink from './ProjectLink'
 
 const Section = ({ title, description, projects, posts }) => (
   <div>
-    <h3>{title} <Link to="/skills">&times;</Link></h3>
-    <p>{description}</p>
+    <h2>{title} <Link to="/skills" className="ml-4">&times;</Link></h2>
+    <div className="pb-8">
+      <p className="highlight">{description[0]}</p>
+      <p>{description[1]}</p>
+    </div>
     <div className="grid">
       <div className="row">
         {projects.map(project => (
           <div className="col" key={project.title}>
-            <div className="card">
-              <ProjectLink {...project} />
-            </div>
+            <ProjectLink {...project} />
           </div>
       ))}
       </div>
