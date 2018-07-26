@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom';
 
-import Info from '../components/Skills/Info'
+import Info from '../components/Info'
+
 import Section from '../components/Skills/Section'
 import Others from '../components/Skills/Others'
 import Menu from '../components/Skills/Menu'

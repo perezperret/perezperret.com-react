@@ -4,7 +4,7 @@ const ProjectLink = ({ title, description, sourceUrl, siteUrl }) => (
   <div className="card">
     <h4>{title}</h4>
 
-    <p className="pb-4">{description}</p>
+    <p className="h6 pb-4">{description}</p>
 
     <div className="d-flex justify-start">
       <div className="text-right">

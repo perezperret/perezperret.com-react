@@ -3,8 +3,9 @@ a {
   color: $content;
 }
 
-a.link {
+.link {
   color: $primary;
+  cursor: pointer;
 
   &:visited {
     color: $primary

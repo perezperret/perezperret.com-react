@@ -1,13 +1,17 @@
 import React from 'react'
-import { EXPERIENCE } from '../content/Experience'
+
+import { INFO, EXPERIENCES } from '../content/Experience'
+
+import Info from '../components/Info'
 
 const ListItem = ({ role, company, location, duration, description }) => (
   <div className="card">
-    <div className="card_header">
-      <h5>{role}</h5>
-      <h3>{company}</h3>
-      <h5>{location}</h5>
-      <h5>{duration}</h5>
+    <div className="link text-right mb-2">
+      {duration} &times;
+    </div>
+    <div>
+      <h4 className="mb-0">{company}</h4>
+      <h6 className="mb-0">{role}</h6>
     </div>
     {/* <ul>{description.map(line => <li key={line}>{line}</li>)}</ul> */}
   </div>
@@ -15,12 +19,14 @@ const ListItem = ({ role, company, location, duration, description }) => (
 
 const Experience = () => {
   return (
-    <div className="container">
-      <h1>work experience</h1>
+    <div className="container constrained content">
+      <h1>Work experience</h1>
+
+      <Info info={INFO} />
 
       <div className="grid">
         <div className="row">
-          {EXPERIENCE.map(experience => (
+          {EXPERIENCES.map(experience => (
             <div className="col" key={`${experience.role}${experience.company}`}>
               <ListItem {...experience} />
             </div>
