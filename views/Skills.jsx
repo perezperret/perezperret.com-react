@@ -4,24 +4,9 @@ import { Route, Link } from 'react-router-dom';
 import Info from '../components/Skills/Info'
 import Section from '../components/Skills/Section'
 import Others from '../components/Skills/Others'
+import Menu from '../components/Skills/Menu'
 
 import { SKILLS, OTHERS, INFO } from '../content/Skills'
-
-const SectionLink = ({ title, isActive, to }) => (
-  <Link to={to} className={`clean-link col col-6${isActive ? ' nav_link--active': ''}`}>
-    <div className="card">{title}</div>
-  </Link>
-)
-
-const SkillsMenu = ({ skills, match, isActive }) => (
-  <div className="grid">
-    <div className="row">
-      {skills.map(({ slug, title }) => (
-        <SectionLink key={slug} to={`${match.url}/${slug}`} isActive={isActive(slug)} title={title} />
-      ))}
-    </div>
-  </div>
-)
 
 const Skills = ({ match, location }) => {
   const isActive = sectionName => (
@@ -29,17 +14,17 @@ const Skills = ({ match, location }) => {
   )
 
   return (
-    <div className="container">
-      <h1>skills</h1>
+    <div className="container constrained content">
+      <h1>Skills</h1>
 
-      <div className="content">
+      <div>
         <Route path={match.url} exact={true} render={() => <Info info={INFO} />} />
         {SKILLS.map(skill => (
           <Route key={skill.slug} path={`${match.url}/${skill.slug}`} render={() => <Section {...skill} />} />
         ))}
       </div>
 
-      <Route path={match.url} exact={true} render={() => <SkillsMenu skills={SKILLS} isActive={isActive} match={match} />} />
+      <Route path={match.url} exact={true} render={() => <Menu skills={SKILLS} match={match} />} />
     </div>
   )
 }

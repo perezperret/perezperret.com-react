@@ -37,3 +37,15 @@ a.link {
 .icon-link.icon-link--external:hover > .icon-link_text {
   color: $secondary;
 }
+
+
+
+.image-link {
+  display: inline-flex;
+  align-items: center;
+
+  &_image {
+    width: 40px;
+    margin-right: 1rem
+  }
+}

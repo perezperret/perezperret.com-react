@@ -1,7 +1,9 @@
-export const INFO = 'I have worked mainly as a web developer, although I did some '
-  + 'systems programming and computational engineering in school and really enjoyed it '
-  + 'so I keep some hope that one day I\'ll be able to make some time to dive deeper '
-  + 'into those areas of computer science.'
+export const INFO = [
+  'I have worked mainly as a web developer, both professionally and on personal projects.',
+  'My go to tools these days are React and Rails, but I\'m looking for chances to get started with Elixir. '
+  + 'I also enjoy solving general computer science problems with C, Java and Python.'
+]
+
 
 export const SKILLS = [
   {

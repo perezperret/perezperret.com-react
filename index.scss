@@ -19,6 +19,19 @@ h1 {
   margin-bottom: 1.5em;
 }
 
+.h5 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p.highlight {
+  font-size: 1.1rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -33,6 +46,10 @@ h1 {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-center {
