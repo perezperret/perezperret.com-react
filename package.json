@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html && cp _redirects dist/_redirects"
+    "build": "yarn && parcel build index.html && cp _redirects dist/_redirects"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-regular-svg-icons": "^5.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "^0.1.0",
     "normalize.css": "^8.0.0",
