@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Menu from './Menu'
-
 const logo = require('../images/logo.png')
 
 class Navbar extends React.Component {
@@ -20,8 +20,10 @@ class Navbar extends React.Component {
   }
 
   render() {
+    const { trayIsOpen } = this.state
+
     return (
-      <nav className={`navbar${this.state.trayIsOpen ? ' navbar--open' : ''}`}>
+      <nav className={`navbar${trayIsOpen ? ' navbar--open' : ''}`}>
         <div className="navbar_nav">
           <Link className="navbar_nav_logo" to="/">
             <img src={logo} />
@@ -32,7 +34,7 @@ class Navbar extends React.Component {
           </div>
         </div>
 
-        {this.state.trayIsOpen
+        {trayIsOpen
           ? <div className="navbar_tray">
               <Menu onToggleTray={this.handleToggleTray} />
             </div>
