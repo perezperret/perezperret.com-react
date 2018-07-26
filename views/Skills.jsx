@@ -29,7 +29,7 @@ const Skills = ({ match, location }) => {
   )
 
   return (
-    <div>
+    <div className="container">
       <h1>skills</h1>
 
       <div className="content">

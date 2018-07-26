@@ -15,7 +15,7 @@ const ListItem = ({ role, company, location, duration, description }) => (
 
 const Experience = () => {
   return (
-    <div>
+    <div className="container">
       <h1>work experience</h1>
 
       <div className="grid">

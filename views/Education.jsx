@@ -3,7 +3,7 @@ import { EDUCATION } from '../content/Education'
 
 const Education = () => {
   return (
-    <div>
+    <div className="container">
       <h2>Education</h2>
       {EDUCATION.map(({ title, institution, location, duration, description }) => (
         <div key={title}>
