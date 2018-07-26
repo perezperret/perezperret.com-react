@@ -24,7 +24,7 @@ class Navbar extends React.Component {
 
     return (
       <nav className={`navbar${trayIsOpen ? ' navbar--open' : ''}`}>
-        <div className="navbar_nav">
+        <div className="navbar_nav constrained">
           <Link className="navbar_nav_logo" to="/">
             <img src={logo} />
           </Link>
@@ -36,7 +36,9 @@ class Navbar extends React.Component {
 
         {trayIsOpen
           ? <div className="navbar_tray">
-              <Menu onToggleTray={this.handleToggleTray} />
+              <div className="constrained">
+                <Menu onToggleTray={this.handleToggleTray} />
+              </div>
             </div>
           : null
         }

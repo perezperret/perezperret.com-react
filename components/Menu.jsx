@@ -10,7 +10,7 @@ const MENU_NAMES = [
 ]
 
 const MenuLink = ({ sectionName, onClick }) => (
-  <Link onClick={onClick} to={`/${sectionName}`} className="menu_link">
+  <Link onClick={onClick} to={`/${sectionName}`} className="menu_link link">
     {sectionName}
   </Link>
 )

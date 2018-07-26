@@ -1,16 +1,39 @@
 a {
   text-decoration: none;
+  color: $content;
+}
+
+a.link {
   color: $primary;
 
   &:visited {
     color: $primary
   }
 
-  &.external {
+  &.link--external {
     color: $secondary;
 
     &:visited {
       color: $secondary;
     }
   }
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  &_text {
+    border-bottom: 1px solid $secondary;
+  }
+
+  &_icon {
+    margin-left: 4px;
+    margin-top: 4px;
+
+    color: $secondary;
+  }
+}
+
+.icon-link.icon-link--external:hover > .icon-link_text {
+  color: $secondary;
 }

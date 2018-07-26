@@ -5,11 +5,13 @@ import Menu from '../components/Menu'
 
 const Home = () => (
   <div>
-    <div className="container display">
-      <p>{ABOUT}</p>
+    <div className="bg-white">
+      <div className="constrained container display">
+        <p>{ABOUT}</p>
+      </div>
     </div>
 
-    <div className="container">
+    <div className="constrained container">
       <Menu />
     </div>
   </div>
