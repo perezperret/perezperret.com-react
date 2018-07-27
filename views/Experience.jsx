@@ -4,18 +4,40 @@ import { INFO, EXPERIENCES } from '../content/Experience'
 
 import Info from '../components/Info'
 
-const ListItem = ({ role, company, location, duration, description }) => (
-  <div className="card">
-    <div className="link text-right mb-2">
-      {duration} &times;
-    </div>
-    <div>
-      <h4 className="mb-0">{company}</h4>
-      <h6 className="mb-0">{role}</h6>
-    </div>
-    {/* <ul>{description.map(line => <li key={line}>{line}</li>)}</ul> */}
-  </div>
-)
+class ListItem extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { trayIsOpen: false }
+    this.toggleTray = this.toggleTray.bind(this)
+  }
+
+  toggleTray() {
+    const trayIsOpen = !this.state.trayIsOpen
+    this.setState({ trayIsOpen })
+  }
+
+  render() {
+    const { role, company, location, duration, description } = this.props
+    const { trayIsOpen } = this.state
+
+    return(
+      <div className="card">
+        <div className="link text-right mb-2 center-vertically align-right" onClick={this.toggleTray}>
+          {duration}<span className="h2 ml-4">{trayIsOpen ? <span>&times;</span> : '+'}</span>
+        </div>
+        <div>
+          <h4 className="mb-0">{company}</h4>
+          <h6 className="mb-0">{role}</h6>
+          {trayIsOpen ? <h6 className="mb-8">{location}</h6> : null}
+        </div>
+        {trayIsOpen
+          ? <div className="mb-8">{description.map(line => <p key={line}>{line}</p>)}</div>
+          : null
+        }
+      </div>
+    )
+  }
+}
 
 const Experience = () => {
   return (
@@ -27,7 +49,7 @@ const Experience = () => {
       <div className="grid">
         <div className="row">
           {EXPERIENCES.map(experience => (
-            <div className="col" key={`${experience.role}${experience.company}`}>
+            <div className="col" key={`${experience.role}${experience.company}${experience.duration}`}>
               <ListItem {...experience} />
             </div>
           ))}

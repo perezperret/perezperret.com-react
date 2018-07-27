@@ -13,6 +13,15 @@ body {
   font-weight: 300;
 }
 
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
 h1 {
   font-size: 1.75em;
   font-weight: 200;
@@ -26,12 +35,21 @@ h2 {
   font-weight: 200;
 }
 
+.h2 {
+  font-size: 1.5rem;
+}
+
 h4 {
   font-size: 1.125rem;
   font-weight: 300;
 
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.h4 {
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 
 .h6 {
@@ -86,6 +104,10 @@ p.highlight {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-4 {
+  margin-left: .5rem;
 }
 
 .pb-4 {
