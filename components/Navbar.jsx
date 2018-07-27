@@ -25,7 +25,7 @@ class Navbar extends React.Component {
     return (
       <nav className={`navbar${trayIsOpen ? ' navbar--open' : ''}`}>
         <div className="navbar_nav constrained">
-          <Link className="navbar_nav_logo" to="/">
+          <Link onClick={() => {trayIsOpen && this.handleToggleTray()}} className="navbar_nav_logo" to="/">
             <img src={logo} />
           </Link>
 
