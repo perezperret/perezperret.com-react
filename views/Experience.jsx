@@ -22,13 +22,13 @@ class ListItem extends React.Component {
 
     return(
       <div className="card">
-        <div className="link text-right mb-2 center-vertically align-right" onClick={this.toggleTray}>
-          {duration}<span className="h2 ml-4">{trayIsOpen ? <span>&times;</span> : '+'}</span>
+        <div className="link text-right center-vertically align-right" onClick={this.toggleTray}>
+          {duration}<span className="h2 ml-2">{trayIsOpen ? <span>&times;</span> : '+'}</span>
         </div>
-        <div>
+        <div className="mb-6">
           <h4 className="mb-0">{company}</h4>
           <h6 className="mb-0">{role}</h6>
-          {trayIsOpen ? <h6 className="mb-8">{location}</h6> : null}
+          {trayIsOpen ? <h6>{location}</h6> : null}
         </div>
         {trayIsOpen
           ? <div className="mb-8">{description.map(line => <p key={line}>{line}</p>)}</div>
