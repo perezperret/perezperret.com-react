@@ -1,58 +1,173 @@
-$content: #7c7c7c;
-$primary: #3f42f4;
-$secondary: #b220b0;
-$tertiary: #e21f53;
+$content: #9b9b9b;
+$background: #f7f7f7;
+
+$primary: #c80080;
+$secondary: #4b4ae2;
+
+$navbar-z-index: 2;
 
 body {
   color: $content;
+  background-color: $background;
   font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 200;
+
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
-a {
-  text-decoration: none;
-  color: $content;
-  border-bottom: 2px solid rgba(0, 0, 0, .1);
-
-  &:hover {
-    border-bottom: 2px solid $secondary;
-  }
+.h2 {
+  font-size: 1.5rem;
 }
 
-a.clean-link {
-  display: inline-block;
-  border: none;
-}
+h4 {
+  font-size: 1.125rem;
+  font-weight: 300;
 
-h1, h4 {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+
+.h4 {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.h6 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.h5 {
+  font-size: 1.1rem;
 }
 
 p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p.highlight {
+  font-size: 1.1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-small {
+  font-size: .75rem;
+}
+
+.mb-3 {
+  margin-bottom: .75rem;
+}
+
+.mb-2 {
+  margin-bottom: .5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
   margin-bottom: 2rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: .5rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .container {
-  padding: 0 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.constrained {
   max-width: 500px;
 }
 
-.d-flex {
+.bg-white {
+  background-color: white;
+}
+
+.display {
+  font-size: 1.5rem;
   display: flex;
+  align-items: center;
+  min-height: 360px;
 }
 
-.justify-start {
-  justify-content: flex-start;
+.text-secondary {
+  color: $secondary;
 }
 
-.mr-1 {
-  margin-right: .5em
+.text-underline-secondary {
+  border-bottom: 1px solid $secondary;
 }
 
 @import './styles/Navbar.scss';
 @import './styles/Footer.scss';
+@import './styles/Menu.scss';
 @import './styles/Grid.scss';
 @import './styles/Card.scss';
+@import './styles/Link.scss';
 
 @import './styles/Skills.scss';

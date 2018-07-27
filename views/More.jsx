@@ -1,25 +1,22 @@
 import React from 'react'
-import { INFO, EDUCATION } from '../content/Education'
+import { INFO, MORE } from '../content/More'
 
 import CollapsibleCard from '../components/CollapsibleCard'
 import Info from '../components/Info'
 
-const Education = () => {
+const More = () => {
   return (
     <div className="container constrained content">
-      <h1>Education</h1>
+      <h1>More</h1>
 
       <Info info={INFO} />
 
       <div className="grid">
         <div className="row">
-          {EDUCATION.map(({ title, institution, location, duration, description }) => (
-            <div className="col" key={`${institution}${title}${duration}`}>
+          {MORE.map(({ title, description, more }) => (
+            <div className="col" key={`${title}${description}`}>
               <CollapsibleCard
                 title={title}
-                subTitle={institution}
-                hiddenSubTitle={location}
-                buttonText={duration}
                 hiddenContent={description}
               />
             </div>
@@ -30,4 +27,4 @@ const Education = () => {
   )
 }
 
-export default Education
+export default More
