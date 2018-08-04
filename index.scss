@@ -155,6 +155,7 @@ p.highlight {
   max-width: 500px;
 }
 
+
 .bg-white {
   background-color: white;
 }
@@ -166,6 +167,15 @@ p.highlight {
   display: flex;
   align-items: center;
   min-height: 360px;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.constrained-xs {
+  position: relative;
+  max-width: 320px;
 }
 
 .display-1 {
