@@ -15,11 +15,11 @@ const MenuLink = ({ sectionName, onClick }) => (
   </Link>
 )
 
-const Menu = ({ onToggleTray }) => (
+const Menu = ({ onClick }) => (
   <ul className="menu">
     {MENU_NAMES.map(sectionName => (
       <li key={sectionName}>
-        <MenuLink onClick={onToggleTray} sectionName={sectionName} />
+        <MenuLink onClick={onClick} sectionName={sectionName} />
       </li>
     ))}
   </ul>
