@@ -136,11 +136,13 @@ p.highlight {
 }
 
 .container {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .constrained {
+  position: relative;
   max-width: 500px;
 }
 
