@@ -9,18 +9,25 @@ const logo = require('../images/logo.png')
 class Navbar extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { trayIsOpen: false }
+    this.state = { trayIsOpen: false, togglerStarted: false }
 
     this.handleToggleTray = this.handleToggleTray.bind(this)
   }
 
   handleToggleTray() {
-    const trayIsOpen = !this.state.trayIsOpen
-    this.setState({ trayIsOpen })
+    this.setState({
+      trayIsOpen: !this.state.trayIsOpen,
+      togglerStarted: true
+    })
   }
 
   render() {
-    const { trayIsOpen } = this.state
+    const { trayIsOpen, togglerStarted } = this.state
+    const getTogglerClass = () => {
+      if (trayIsOpen) return 'navbar_nav_toggler--as-close'
+      if (!trayIsOpen && togglerStarted) return 'navbar_nav_toggler--as-open'
+      return ''
+    }
 
     return (
       <nav className={`navbar${trayIsOpen ? ' navbar--open' : ''}`}>
@@ -29,15 +36,17 @@ class Navbar extends React.Component {
             <img src={logo} />
           </Link>
 
-          <div className="navbar_nav_toggler" onClick={this.handleToggleTray}>
+          <div className={`navbar_nav_toggler ${getTogglerClass()}`} onClick={this.handleToggleTray}>
             <FontAwesomeIcon icon="plus" />
           </div>
         </div>
 
         {trayIsOpen
-          ? <div className="navbar_tray">
-              <div className="constrained">
-                <Menu onToggleTray={this.handleToggleTray} />
+          ? <div className="constrained">
+              <div className="tray">
+                <div className="tray--open">
+                  <Menu onToggleTray={this.handleToggleTray} />
+                </div>
               </div>
             </div>
           : null

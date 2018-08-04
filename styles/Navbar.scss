@@ -4,7 +4,9 @@
   z-index: 1;
 
   &--open {
-    background-color: white;
+    animation-name: fade-in-white;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 
   &_nav {
@@ -29,22 +31,62 @@
       display: flex;
       align-items: center;
 
-      .navbar--open & {
-        transform: rotate(45deg);
+      &--as-close {
+        animation-name: rotate-to-close;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+      }
+
+      &--as-open {
+        animation-name: rotate-to-open;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
       }
     }
-
   }
+}
 
-  &_tray {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: .5rem 2rem;
+.tray {
+  overflow: hidden;
+  &--open {
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
 
-    .navbar--open > & {
-      background-color: white;
-    }
+@keyframes slide-in-from-top {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 500px;
+  }
+}
+
+@keyframes rotate-to-close {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-to-open {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes fade-in-white {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
   }
 }
