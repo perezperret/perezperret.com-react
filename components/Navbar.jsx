@@ -31,7 +31,7 @@ class Navbar extends React.Component {
 
     return (
       <nav className={`navbar ${this.getNavbarClass()}`}>
-        <div className="constrained container">
+        <div className="container">
           <div className="navbar_nav">
             <Logo onClick={() => {isOpen && this.handleToggleTray()}} />
             <Toggler isOpen={isOpen} alreadyToggled={alreadyToggled} onClick={this.handleToggleTray} />

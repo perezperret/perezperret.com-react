@@ -13,7 +13,7 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="constrained container display justify-right">
+    <div className="container display justify-right">
       <div className="text-tight text-right constrained-xs">
         <span className="display-1">santiago</span>{' '}
         <span className="display-1 text-secondary">perez</span>{' '}

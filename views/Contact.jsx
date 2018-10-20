@@ -31,7 +31,7 @@ const ContactLink = ({ description, linkText, linkUrl, linkIcon }) => (
 )
 
 const Contact = () => (
-  <div className="container constrained content">
+  <div className="container constrained content route-enter">
     <h1>Contact</h1>
     <div className="pb-4">
       {LINKS.map(link => <ContactLink {...link} />)}

@@ -6,7 +6,7 @@ import Info from '../components/Info'
 
 const Education = () => {
   return (
-    <div className="container constrained content">
+    <div className="container constrained content route-enter">
       <h1>Education</h1>
 
       <Info info={INFO} />

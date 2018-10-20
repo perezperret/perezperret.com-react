@@ -10,7 +10,7 @@
 
   &--closed {
     animation-name: slide-out-to-top;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
   }
 }
@@ -20,13 +20,13 @@
     max-height: 0;
   }
   100% {
-    max-height: 500px;
+    max-height: 1000px;
   }
 }
 
 @keyframes slide-out-to-top {
   0% {
-    max-height: 500px;
+    max-height: 1000px;
   }
   100% {
     max-height: 0;
