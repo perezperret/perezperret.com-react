@@ -1,47 +1,28 @@
 @import 'Navbar/Tray';
-@import 'Navbar/Logo';
 @import 'Navbar/Toggler';
 
 .navbar {
-  z-index: 1;
+  z-index: $z-index-navbar;
+  background-color: $white;
 
-  &--open {
-    animation-name: fade-in-to-white;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
+  &_menu {
+    @extend .container;
 
-  &--closed {
-    animation-name: fade-out-from-white;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-
-  &_nav {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  &_tray {
+    @extend .container;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
-@keyframes fade-in-to-white {
-  0% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: white;
-  }
-}
-
-@keyframes fade-out-from-white {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: transparent;
-  }
+img.navbar_logo {
+  height: 40px;
 }

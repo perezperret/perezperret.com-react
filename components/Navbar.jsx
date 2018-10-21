@@ -30,15 +30,17 @@ class Navbar extends React.Component {
     const { isOpen, alreadyToggled } = this.state
 
     return (
-      <nav className={`navbar ${this.getNavbarClass()}`}>
-        <div className="container">
-          <div className="navbar_nav">
+      <nav className="navbar">
+          <div className="navbar_menu">
             <Logo onClick={() => {isOpen && this.handleToggleTray()}} />
             <Toggler isOpen={isOpen} alreadyToggled={alreadyToggled} onClick={this.handleToggleTray} />
           </div>
 
-          <Tray isOpen={isOpen} alreadyToggled={alreadyToggled} onClick={this.handleToggleTray} />
-        </div>
+          {
+            isOpen
+            ? <Tray isOpen={isOpen} alreadyToggled={alreadyToggled} onClick={this.handleToggleTray} />
+            : null
+          }
       </nav>
     )
   }

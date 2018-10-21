@@ -1,17 +1,9 @@
-$content: #9b9b9b;
-$background: #f7f7f7;
-
-$primary: #c80080;
-$secondary: #4b4ae2;
-
-$navbar-z-index: 2;
-
-body {
-  color: $content;
-  background-color: $background;
-  font-family: 'Muli', sans-serif;
-  font-weight: 300;
-}
+@import "./styles/variables";
+@import "./styles/backgrounds";
+@import "./styles/layout";
+@import "./styles/spacing";
+@import "./styles/text";
+@import "./styles/general";
 
 .center-vertically {
   display: flex;
@@ -135,31 +127,6 @@ p.highlight {
   padding-bottom: 2rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.content {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.container {
-  position: relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.constrained {
-  position: relative;
-  max-width: 500px;
-}
-
-
-.bg-white {
-  background-color: white;
-}
-
 .display {
   font-size: 1.5rem;
   line-height: 1.25em;
@@ -178,25 +145,20 @@ p.highlight {
   max-width: 320px;
 }
 
-.display-1 {
-  font-size: 4rem;
-  font-weight: 200;
-}
-
 .text-tight {
   line-height: 1.1em;
 }
 
 .text-primary {
-  color: $primary;
+  color: $brand-primary;
 }
 
 .text-secondary {
-  color: $secondary;
+  color: $brand-secondary;
 }
 
 .text-underline-secondary {
-  border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $brand-secondary;
 }
 
 .route-enter {

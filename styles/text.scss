@@ -1,0 +1,23 @@
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: $brand-muted;
+}
+
+.display-1 {
+  font-size: 1.75rem;
+}
+
+.display-2 {
+  font-size: 1.5rem;
+}
+
+.display-3 {
+  font-size: 1.25rem;
+}
+
+.text-underline-primary {
+  border-bottom: 3px solid $brand-primary;
+}
