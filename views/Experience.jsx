@@ -7,7 +7,7 @@ import Info from '../components/Info'
 
 const Experience = () => {
   return (
-    <div className="container constrained content">
+    <div className="container constrained content route-enter">
       <h1>Work experience</h1>
 
       <Info info={INFO} />
