@@ -1,7 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Jumbotron from '../components/Home/Jumbotron'
+import Content from '../components/Content'
+import Loading from '../components/Loading'
 
 class Life extends React.Component {
   constructor(props) {
@@ -34,13 +35,11 @@ class Life extends React.Component {
       <div className="container">
         {
           loading
-          ? 'Loading...'
+          ? <Loading/>
           : (
             <div>
               <h1 className="my-2-1">{title}</h1>
-              {content.map(block => (
-                <p>{block.children.map(child => <span>{child.text}</span>)}</p>)
-              )}
+              <Content content={content} />
             </div>
           )
         }
