@@ -7,9 +7,9 @@ const Jumbotron = ({ highlights }) => (
     {
       highlights.map(({ subHeading, heading, link }) => (
         <div key={subHeading} className="flex vertical align-end pb-3-1">
-          <div className="display-3 text-right text-muted">{subHeading}</div>
+          <div className="h1 text-right text-muted">{subHeading}</div>
           <Link to={link}>
-            <div className="display-1 text-right text-underline-primary">{heading}</div>
+            <div className="display-3 text-right text-underline-primary">{heading}</div>
           </Link>
         </div>
       ))
