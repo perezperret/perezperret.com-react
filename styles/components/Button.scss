@@ -1,0 +1,16 @@
+.btn {
+  padding: 0.25rem 0.75rem;
+  background-color: $brand-muted;
+  display: inline-flex;
+  align-items: center;
+
+  &_icon {
+    height: 2rem;
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background-color: lighten($brand-primary, 10);
+  border-bottom: 3px solid $brand-primary;
+}
