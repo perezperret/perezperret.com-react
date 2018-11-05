@@ -1,6 +1,3 @@
-@import 'Navbar/Tray';
-@import 'Navbar/Toggler';
-
 .navbar {
   z-index: $z-index-navbar;
   background-color: $white;
@@ -13,13 +10,6 @@
 
     display: flex;
     justify-content: space-between;
-  }
-
-  &_tray {
-    @extend .container;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
 

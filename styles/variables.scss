@@ -13,8 +13,20 @@ $brand-secondary: #4aa720;
 
 // Content colors
 $content: $black;
-$background: #fff7ee;
+$background: #f8f8f8;
 
 // Positioning
 // z-index
 $z-index-navbar: 2;
+
+// Layout
+// grid-breakpoints
+$breakpoints: (
+  ss: 0,
+  xs: 360,
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1200px,
+  ll: 1500px
+);

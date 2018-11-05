@@ -1,5 +1,4 @@
 import React from 'react'
-import { WORK } from '../content/Home'
 
 const Work = () => (
   <div className="container">

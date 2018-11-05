@@ -1,11 +1,11 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import Jumbotron from '../components/Home/Jumbotron'
+
+import { highlights } from '../content/homeJumbotron.json'
 
 const Home = () => (
   <div>
-    <Jumbotron />
+    <Jumbotron highlights={highlights} />
   </div>
 )
 
