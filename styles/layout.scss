@@ -14,6 +14,10 @@
   }
 }
 
+.constrain-xs {
+  max-width: map-get($breakpoints, xs);
+}
+
 .flex {
   display: flex;
 }
