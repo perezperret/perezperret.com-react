@@ -1,0 +1,94 @@
+{
+  "_createdAt": "2018-12-13T22:31:57Z",
+  "_id": "0078f1f3-85f6-47de-98a8-6d9ee652011c",
+  "_rev": "y7CUb8N0nJiE1Xsxx5vg1f",
+  "_type": "post",
+  "_updatedAt": "2018-12-13T22:35:17Z",
+  "content": [
+    {
+      "_key": "607ae3424d96",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "607ae3424d960",
+          "_type": "span",
+          "marks": [],
+          "text": "I am currently looking for work that can be performed remotely, using the technologies I know best or am looking to learn."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b3b921047444",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b3b9210474440",
+          "_type": "span",
+          "marks": [],
+          "text": "What I'm looking for is work interesting enough that I have to remind myself to take a break."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "dc085e453053",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dc085e4530530",
+          "_type": "span",
+          "marks": [],
+          "text": "I value work life balance dearly, and I firmly believe working sane hours yields better productivity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "87f663a8dfde",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "87f663a8dfde0",
+          "_type": "span",
+          "marks": [],
+          "text": "Plus, I don't expect Silicon Valley pay, but I'm not willing to be cheap labor either."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "99bd4d44a82f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "99bd4d44a82f0",
+          "_type": "span",
+          "marks": [],
+          "text": "I like to contribute to design, customer support and business decisions as well as technology related ones."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "006ccbc8748d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "006ccbc8748d0",
+          "_type": "span",
+          "marks": [],
+          "text": "The ideal project for me right now would be a startup idea that needs a technical cofounder, and has a couple of bucks to pay me a living wage."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "title": "My work"
+}
