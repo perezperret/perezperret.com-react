@@ -1,19 +1,13 @@
 import React from 'react'
-import { ABOUT } from '../content/Home'
+import Jumbotron from '../components/Home/Jumbotron'
+import SocialMediaLinks from '../components/Home/SocialMediaLinks'
 
-import Menu from '../components/Menu'
+import { highlights } from '../content/homeJumbotron.json'
 
 const Home = () => (
   <div>
-    <div className="bg-white">
-      <div className="constrained container display">
-        <p>{ABOUT}</p>
-      </div>
-    </div>
-
-    <div className="constrained container">
-      <Menu />
-    </div>
+    <Jumbotron highlights={highlights} />
+    <SocialMediaLinks />
   </div>
 )
 

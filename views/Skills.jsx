@@ -15,7 +15,7 @@ const Skills = ({ match, location }) => {
   )
 
   return (
-    <div className="container constrained content">
+    <div className="container constrained content route-enter">
       <h1>Skills</h1>
 
       <div>

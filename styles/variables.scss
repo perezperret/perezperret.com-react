@@ -1,0 +1,32 @@
+// Raw colors
+$white: #fff;
+$black: #000;
+
+// Transparents
+$gray-10: rgba(0, 0, 0, .1);
+
+// Brand colors
+$brand-white: $white;
+$brand-muted: #5c5c5d;
+$brand-primary: #008c95;
+$brand-secondary: #4aa720;
+
+// Content colors
+$content: $black;
+$background: #f8f8f8;
+
+// Positioning
+// z-index
+$z-index-navbar: 2;
+
+// Layout
+// grid-breakpoints
+$breakpoints: (
+  ss: 0,
+  xs: 400px,
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1200px,
+  ll: 1500px
+);

@@ -1,0 +1,18 @@
+.navbar {
+  z-index: $z-index-navbar;
+  background-color: $white;
+
+  &_menu {
+    @extend .container;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+img.navbar_logo {
+  height: 40px;
+}
