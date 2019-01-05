@@ -30,6 +30,18 @@
   flex-direction: column;
 }
 
+.w-md-20 {
+  @include media-breakpoint-up(md) {
+    width: 20%;
+  }
+}
+
+.md-horizontal {
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
 .justify-end {
   justify-content: flex-end;
 }
