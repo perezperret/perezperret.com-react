@@ -26,17 +26,16 @@
     "id": "6cxSNiy12Makia4EqesQsm"
   },
   {
-    "name": "🏡 Renthru",
-    "sourceCodeUrl": "https://github.com/perezperret/renthru",
-    "url": "https://renthru.com",
-    "description": "A prototype for a rental property management application.",
-    "id": "5ys4wvC7yEOkUKoW6YACw0"
-  },
-  {
     "name": "⚡️ QuickUrl",
     "sourceCodeUrl": "https://github.com/perezperret/quick-url",
     "url": "https://quick-url-demo.netlify.com/",
     "description": "A simple, recursive, URL parser and builder.",
     "id": "4M4fznAQrCyIMoOcmWq0aA"
+  },
+  {
+    "name": "🏡 Renthru",
+    "sourceCodeUrl": "https://github.com/perezperret/renthru",
+    "description": "A prototype for a rental property management application.",
+    "id": "5ys4wvC7yEOkUKoW6YACw0"
   }
 ]
