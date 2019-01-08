@@ -30,9 +30,19 @@
   flex-direction: column;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .w-md-20 {
   @include media-breakpoint-up(md) {
     width: 20%;
+  }
+}
+
+.w-md-50 {
+  @include media-breakpoint-up(md) {
+    width: 50%;
   }
 }
 

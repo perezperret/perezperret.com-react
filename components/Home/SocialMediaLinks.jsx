@@ -11,7 +11,7 @@ const socialMedia = [
 ]
 
 const SocialMediaLinks = () => (
-  <div className="container py-2-1 flex flex-wrap">
+  <div className="container mb-3-1 flex flex-wrap">
     {socialMedia.map(medium => (
       <div className="mr-1-2 mb-1-2">
         <IconLink {...medium} key={medium.name} icon={socialMediaIcons[medium.name]} />

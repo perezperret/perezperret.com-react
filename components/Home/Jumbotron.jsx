@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Jumbotron = ({ highlights }) => (
-  <div className="bg-white box-shadow-bottom">
+  <div className="bg-white box-shadow-bottom mb-3-1">
     <div className="container fold-height flex vertical align-end align-md-center justify-center">
       {
         highlights.map(({ subHeading, heading, link }) => (

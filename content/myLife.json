@@ -1,76 +1,46 @@
 {
-  "sys": {
-    "space": {
-      "sys": {
-        "type": "Link",
-        "linkType": "Space",
-        "id": "6jtwmjb4i1r4"
+  "title": "My life",
+  "body": {
+    "data": {},
+    "content": [
+      {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "marks": [],
+            "value": "I have lived in Caracas, Venezuela my whole life (although I have travelled a lot) but I'm trying to become a digital nomad, and do contract development and design work to support this.",
+            "nodeType": "text"
+          }
+        ],
+        "nodeType": "paragraph"
+      },
+      {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "marks": [],
+            "value": "I like to hike, climb, run, swim and I've been trying to learn how to surf (with limited success) and doing yoga for a year (it has changed my life).",
+            "nodeType": "text"
+          }
+        ],
+        "nodeType": "paragraph"
+      },
+      {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "marks": [],
+            "value": "I believe very firmly in work life balance, but I also believe work is an integral part of my life, so I put a lot of dedication into it.",
+            "nodeType": "text"
+          }
+        ],
+        "nodeType": "paragraph"
       }
-    },
-    "id": "5Qr08zO61qEI8wKmyIooU",
-    "type": "Entry",
-    "createdAt": "2018-12-13T22:03:32.051Z",
-    "updatedAt": "2018-12-13T23:03:27.201Z",
-    "environment": {
-      "sys": {
-        "id": "master",
-        "type": "Link",
-        "linkType": "Environment"
-      }
-    },
-    "revision": 2,
-    "contentType": {
-      "sys": {
-        "type": "Link",
-        "linkType": "ContentType",
-        "id": "staticPage"
-      }
-    },
-    "locale": "en-US"
+    ],
+    "nodeType": "document"
   },
-  "fields": {
-    "title": "My life",
-    "body": {
-      "data": {},
-      "content": [
-        {
-          "data": {},
-          "content": [
-            {
-              "data": {},
-              "marks": [],
-              "value": "I have lived in Caracas, Venezuela my whole life (although I have travelled a lot) but I'm trying to become a digital nomad, and do contract development and design work to support this.",
-              "nodeType": "text"
-            }
-          ],
-          "nodeType": "paragraph"
-        },
-        {
-          "data": {},
-          "content": [
-            {
-              "data": {},
-              "marks": [],
-              "value": "I like to hike, climb, run, swim and I've been trying to learn how to surf (with limited success) and doing yoga for a year (it has changed my life).",
-              "nodeType": "text"
-            }
-          ],
-          "nodeType": "paragraph"
-        },
-        {
-          "data": {},
-          "content": [
-            {
-              "data": {},
-              "marks": [],
-              "value": "I believe very firmly in work life balance, but I also believe work is an integral part of my life, so I put a lot of dedication into it.",
-              "nodeType": "text"
-            }
-          ],
-          "nodeType": "paragraph"
-        }
-      ],
-      "nodeType": "document"
-    }
-  }
+  "id": "5Qr08zO61qEI8wKmyIooU"
 }
