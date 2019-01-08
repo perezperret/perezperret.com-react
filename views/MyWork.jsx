@@ -4,7 +4,7 @@ import ContentfulRichText from '../components/ContentfulRichText'
 
 import { title, body } from '../content/myWork.json'
 
-const Work = () => (
+const MyWork = () => (
   <div className="container">
     <div className="constrain-xs">
       <h1 className="my-2-1">{title}</h1>
@@ -13,4 +13,4 @@ const Work = () => (
   </div>
 )
 
-export default Work
+export default MyWork

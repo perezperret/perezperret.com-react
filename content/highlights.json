@@ -1,16 +1,12 @@
 [
   {
-    "_key": "48a4cb4fb498",
-    "_type": "highlight",
     "heading": "Santiago Pérez Perret",
-    "link": "/life",
+    "link": "/my-life",
     "subHeading": "My name is"
   },
   {
-    "_key": "0d37413e540d",
-    "_type": "highlight",
     "heading": "Remote Web Developer",
-    "link": "/work",
+    "link": "/my-work",
     "subHeading": "I work as a"
   }
 ]

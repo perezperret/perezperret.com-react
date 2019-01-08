@@ -32,10 +32,7 @@ contentfulClient
 
 // Get projects
 contentfulClient
-.getEntries({
-  select: 'fields,sys.id',
-  'content_type': 'project'
-})
+.getEntries({ select: 'fields,sys.id', 'content_type': 'project' })
 .then(parseContentfulEntries)
 .then(projects => {
   fs.writeFileSync('./content/projects.json', JSON.stringify(projects, null, 2))
