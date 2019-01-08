@@ -27,15 +27,15 @@ export default class Contact extends React.Component {
 
   render() {
     return(
-      <div className="container">
-        <h4 className="mb-1-1">Contact me</h4>
-          <div className="flex vertical md-horizontal">
-            <div className="alert alert-warning w-md-20 mb-1-1 mb-md-0 mr-md-1-1">
-              <p>{this.state.message}</p>
-              You can also find me at perezperret@gmail.com
-            </div>
-            <Form onSubmit={this.onSubmit} />
+      <div className="container mb-3-1">
+        <h4 className="mt-0 mb-2-1">Contact me</h4>
+        <div className="flex flex-column flex-md-row">
+          <div className="alert alert-warning w-md-20 mb-1-1 mb-md-0 mr-md-1-1">
+            <p>{this.state.message}</p>
+            You can also find me at perezperret@gmail.com
           </div>
+          <Form onSubmit={this.onSubmit} />
+        </div>
       </div>
     )
   }
