@@ -5,17 +5,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+import ScrollToTop from './views/ScrollToTop'
 import Routes from './views/Routes'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 const App = () => (
   <Router>
-    <div>
+    <ScrollToTop>
       <Navbar />
       <Routes />
       <Footer />
-    </div>
+    </ScrollToTop>
   </Router>
 )
 
