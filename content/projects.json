@@ -1,0 +1,42 @@
+[
+  {
+    "name": "🎓 PostsecAPI",
+    "sourceCodeUrl": "https://github.com/perezperret/postsec_api",
+    "url": "https://postsecapisample.netlify.com",
+    "description": "An API to query post-secondary institutions in the US.",
+    "id": "6DBKghPlReGWO2Ueu6mWaQ"
+  },
+  {
+    "name": "🔥 Firebase Recommendations App",
+    "sourceCodeUrl": "https://github.com/perezperret/firebase-recommendations-app",
+    "url": "https://firebase-recommendations-app.netlify.com/",
+    "description": "A prototype for a recommendations board using Firebase as a back-end.",
+    "id": "68ArO1UVCEw0O6eweC8QOI"
+  },
+  {
+    "name": "💡 perezperret.com",
+    "sourceCodeUrl": "https://github.com/perezperret/perezperret.com",
+    "description": "This site, built using a very simple flavor of React.",
+    "id": "1PQ9oSI3GE2gCC88wKgA2o"
+  },
+  {
+    "name": "🚀 Keeprocket",
+    "url": "http://keeprocket.com",
+    "description": "A simple inventory management application for small business. Still in an Alpha phase.",
+    "id": "6cxSNiy12Makia4EqesQsm"
+  },
+  {
+    "name": "🏡 Renthru",
+    "sourceCodeUrl": "https://github.com/perezperret/renthru",
+    "url": "https://renthru.com",
+    "description": "A prototype for a rental property management application.",
+    "id": "5ys4wvC7yEOkUKoW6YACw0"
+  },
+  {
+    "name": "⚡️ QuickUrl",
+    "sourceCodeUrl": "https://github.com/perezperret/quick-url",
+    "url": "https://quick-url-demo.netlify.com/",
+    "description": "A simple, recursive, URL parser and builder.",
+    "id": "4M4fznAQrCyIMoOcmWq0aA"
+  }
+]
